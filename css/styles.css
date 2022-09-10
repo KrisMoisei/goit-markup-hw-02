@@ -31,7 +31,9 @@
 }
 /*Button style*/
 .button {
+    cursor: pointer;
     font-family: inherit;
+    text-decoration: none;
 }
 /*Header*/
 .header-logo {
@@ -41,8 +43,9 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    text-decoration: none;
 }
-.header-logo .accent{
+.accent-header {
     color: #000000;
 }
 .header-links {
@@ -65,91 +68,98 @@
     color: var(--accent-color);
     outline: none;
 }
-/* Hide heading */
-
-/*.
-.button {
-    cursor: pointer;
-}
-*/
-
 /*Hero section*/
 .hero, footer {
     background-color: var(--tetriary-color);
 }
 .hero-title {
+    color: var(--primary-title-color);
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.3;
+    line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--primary-title-color);
 }
-.hero-social {
+.button.primery {
     background: var(--accent-color);
     color: var(--btn-color);
 }
-
+.button.primery:hover,
+.button.primery:focus {
+    background-color:#188CE8;
+}
 /*About section*/
 .about-title {
+    color:var(--secondary-text-color);
     font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
+    line-height: 1.14;
     text-transform: uppercase;
-    color:var(--secondary-text-color)
 }
 .about-text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    line-height: 1.7;
 }
 /*what do we do*/
-.about {
+.title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.1;
+    line-height: 1.16;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
 /*Team*/
 .about-team {
     background: var(--btn-color);
 }
-.nav {
-    font-size: 16px;
-    line-height: 1.1;
-    text-align: center;
-    letter-spacing: 0.03em;
+.name {
     color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
 }
 .profession {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.1;
-    text-align: center;
-    letter-spacing: 0.03em;
     color: var(--primary-text-color);
-}
-/*portfolio*/
-.portfolio-btn {
-    background: var(--btn-color);
-    font-weight: 700;
     font-size: 16px;
-    line-height: 1.9;
+    line-height: 1.2;
+    text-align: center;
+}
+/*footer*/
+.accent-footer {
+    color: var(--primary-title-color);
+}
+.address .list {
+    font-style: normal;
+}
+.location {
+    color: var(--primary-title-color);
+    line-height: 1.7; 
+}
+.contact {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.7;
+}
+
+/*portfolio*/
+.portfolio .button {
+    background-color: var(--btn-color);
     color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
     border:none;
 }
-.portfolio-btn:active{
+.portfolio .current {
+    background-color: var(--accent-color);
+    color: var(--primary-title-color);
+}
+.portfolio .button:hover,
+.portfolio .button:focus {
     background: var(--accent-color);
     color: var(--primary-title-color);
 }
-.portfolio-btn.current {
-    background-color: var(--accent-color);
-    color: var(--btn-color);
+.portfolio-all{
+    text-decoration: none;
 }
 .galary{
     font-weight: 700;
@@ -164,30 +174,4 @@
     line-height: 1.9;
     letter-spacing: 0.03em;
     color: var(--primary-text-color)
-}
-/*footer*/
-.footer-list{
-    font-style: normal;
-}
-.address{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: var(--primary-title-color);
-}
-.contact{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-}
-.footer-Studio {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    color: var(--primary-title-color);
 }
